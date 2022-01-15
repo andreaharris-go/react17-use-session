@@ -35,7 +35,7 @@ function useSession(sessionKey: string, keepOnWindowClosed: boolean = true)
 
     } catch {
       // This catch block handles the known issues listed here: https://caniuse.com/#feat=namevalue-storage
-      console.warn("useSession could not access the browser storage. Session will be lost when closing browser window")
+      // console.warn("useSession could not access the browser storage. Session will be lost when closing browser window")
     }
 
     return null;
